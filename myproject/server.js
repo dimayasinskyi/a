@@ -2,7 +2,7 @@ const express = require("express");
 const https = require("https");
 const fs = require("fs");
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 35.160.120.126;
 
 app.use(express.static("myproject/public"));
 
@@ -17,6 +17,6 @@ const options = {
     cert: fs.readFileSync("myproject/cert.pem"),
 };
 
-https.createServer(options, app).listen(port, '0.0.0.0', () => {
-  console.log(`Сервер працює на https://0.0.0.0:${port}`);
+https.createServer(options, app).listen(35.160.120.126, () => {
+    console.log("Cервер працює на https://localhost:4000");
 });
