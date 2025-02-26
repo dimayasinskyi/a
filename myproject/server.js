@@ -17,6 +17,6 @@ const options = {
     cert: fs.readFileSync("myproject/cert.pem"),
 };
 
-https.createServer(options, app).listen(4000, () => {
-    console.log("Cервер працює на https://localhost:4000");
+https.createServer(options, app).listen(process.env.PORT || 4000, () => {
+    console.log("Cервер працює на https://myprojects-1bpt.onrender.com");
 });
