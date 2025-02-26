@@ -2,7 +2,7 @@ const express = require("express");
 const https = require("https");
 const fs = require("fs");
 const app = express();
-
+const port = process.env.PORT || 3000;
 
 app.use(express.static("myproject/public"));
 
@@ -17,6 +17,6 @@ const options = {
     cert: fs.readFileSync("myproject/cert.pem"),
 };
 
-https.createServer(options, app).listen(process.env.PORT || 0.0.0.0, () => {
-    console.log(`Cервер працює на https://myprojects-1bpt.onrender.com`);
+https.createServer(options, app).listen(port, '0.0.0.0', () => {
+  console.log(`Сервер працює на https://0.0.0.0:${port}`);
 });
