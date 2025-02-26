@@ -18,5 +18,5 @@ const options = {
 };
 
 https.createServer(options, app).listen(35.160.120.126, () => {
-    console.log("Cервер працює на https://localhost:4000");
+    console.log("Cервер працює на https://myprojects-1bpt.onrender.com");
 });
