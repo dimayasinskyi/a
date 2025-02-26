@@ -1,6 +1,6 @@
 "scripts": {
-  "start": "node myproject/server.js"
-}
+  "start": "node myproject/server.js",
+},
 
 {
   "name": "project-a",
