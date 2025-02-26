@@ -20,3 +20,7 @@ const options = {
 https.createServer(options, app).listen(35.160.120.126, () => {
     console.log("Cервер працює на https://myprojects-1bpt.onrender.com");
 });
+
+http.createServer(app).listen(80, () => {
+    console.log("Redirecting HTTP to HTTPS");
+});
